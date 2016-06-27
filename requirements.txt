@@ -1,0 +1,4 @@
+django
+MySql-python==1.2.5
+mongoengine==0.9.0
+pymongo==2.7.2
