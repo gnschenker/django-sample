@@ -1,3 +1,5 @@
+{% extends '_base.html' %}
+{% block content %}
 <h1>{{ question.question_text }}</h1>
 
 <ul>
@@ -10,3 +12,4 @@
 <br>
 <a href="{% url 'polls:index' %}">Back to list of questions...</a>
 
+{% endblock %}

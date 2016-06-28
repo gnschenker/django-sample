@@ -1,0 +1,38 @@
+{
+  "name": "otx",
+  "version": "0.0.1",
+  "description": "AlienVault OTX",
+  "repository": "https://bitbucket.org/alienadmin/labs-pulse",
+  "license": "Proprietary",
+  "private": true,
+  "author": "Nathan Biles <nbiles@alienvault.com>",
+  "config": {
+    "staticDir": "../static",
+    "templatesDir": "../../templates",
+    "target": "http://127.0.0.1:8000"
+  },
+  "scripts": {
+    "postinstall": "npm run build",
+    "clean": "rm -rf ../front/node_modules/ ../front/etc ../static/front/* ../templates/_base.html",
+    "build": "webpack --config ./webpack/webpack.config.js",
+    "build-dev": "webpack --devtool source-map --config ./webpack/webpack.config.js",
+    "develop": "webpack --watch --devtool source-map --config ./webpack/webpack.config.js"
+  },
+  "dependencies": {
+    "angular": "~1.5.7",
+    "angular-ui-router": "^0.3.1",
+    "copy-webpack-plugin": "^1.1.1",
+    "css-loader": "^0.23.1",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.21.0",
+    "node-sass": "^3.7.0",
+    "postcss-loader": "^0.8.2",
+    "protractor": "^3.3.0",
+    "sass-loader": ">=2.0.1",
+    "style-loader": "^0.13.1",
+    "webpack": "~1.12"
+  },
+  "engines": {
+    "node": ">=5.4.0"
+  }
+}

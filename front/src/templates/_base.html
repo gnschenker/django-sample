@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="sample">
+    <head>
+        <title>Sample Django Angular App</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="/static/front/appjs"></script>
+    </head>
+    <body>
+        <div ui-view="layout"></div>
+        <div>
+        	{% block content %}{% endblock %}
+        </div>
+    </body>
+</html>
