@@ -9,4 +9,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /usr/src/app
 EXPOSE 8000
 RUN chmod +x ./start.sh
+RUN chmod +x ./test.sh
 ENTRYPOINT ./start.sh
