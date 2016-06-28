@@ -1,7 +1,9 @@
 # django-sample
 
 ## Run the application
+```
 docker-compose up
+```
 
 ...and clean up...
 ```
@@ -9,7 +11,9 @@ docker-compose down
 ```
 
 ## Run the tests
+```
 docker-compose -f docker-compose.test.yml up
+```
 
 ...and clean up...
 ```
