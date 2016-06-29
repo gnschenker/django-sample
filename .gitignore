@@ -3,3 +3,5 @@ front/node_modules/
 front/etc/
 static/front/
 templates/_base.html
+*.log
+.DS_Store

@@ -1,6 +1,4 @@
 var modules = [
-  'ngSanitize',
-  'ngMessages',
   'ui.router',
   require('./config').name,
   require('./views').name,

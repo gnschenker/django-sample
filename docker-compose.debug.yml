@@ -1,0 +1,38 @@
+version: '2'
+services:
+  app:
+    build: .
+    container_name: 'mysite'
+    volumes:
+      - .:/usr/src/app
+    links:
+      - mysql
+      - mongo
+    ports:
+      - '80:8000'
+  webpack:
+    build:
+      context: .
+      dockerfile: Dockerfile.webpack
+    container_name: 'webpack'
+    volumes:
+      - ./front/src:/usr/src/app/front/src
+      - ./static:/usr/src/app/static
+      - ./templates:/usr/src/app/templates
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_USER=wombat
+      - MYSQL_PASSWORD=1wombat2
+      - MYSQL_DATABASE=mysite
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+  mongo:
+    image: mongo:3
+    container_name: mongo
+    volumes:
+      - ./data/mongo:/data/db
+    ports:
+      - '27017:27017'

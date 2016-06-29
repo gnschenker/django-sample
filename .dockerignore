@@ -1,3 +1,7 @@
+*.log
+.git/
+.gitignore
+.idea/
 data/
 front/node_modules/
 front/etc/

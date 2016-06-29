@@ -5,7 +5,7 @@ var thisModule = angular.module('sample.views.posts', [])
 
 if (typeof module === 'object' && module.hasOwnProperty('exports')) module.exports = thisModule;
 
-function appConfig($stateProvider) {
+function postsConfig($stateProvider) {
   $stateProvider
     .state('posts', {
       url: "",
@@ -23,5 +23,5 @@ function appConfig($stateProvider) {
 // Posts controller
 function postsController() {
   var appVM = this;
-  appVM.message = 'Angular Worked!!!'
+  appVM.message = 'Angular Worked!!! Or not?';
 }

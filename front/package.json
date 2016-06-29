@@ -12,11 +12,10 @@
     "target": "http://127.0.0.1:8000"
   },
   "scripts": {
-    "postinstall": "npm run build",
     "clean": "rm -rf ../front/node_modules/ ../front/etc ../static/front/* ../templates/_base.html",
     "build": "webpack --config ./webpack/webpack.config.js",
     "build-dev": "webpack --devtool source-map --config ./webpack/webpack.config.js",
-    "develop": "webpack --watch --devtool source-map --config ./webpack/webpack.config.js"
+    "develop": "webpack --watch --watch-polling --devtool source-map --config ./webpack/webpack.config.js"
   },
   "dependencies": {
     "angular": "~1.5.7",
