@@ -5,14 +5,16 @@
 docker-compose -f docker/docker-compose.debug.yml up
 ```
 
-This will start the application in a container called **app** and the application will be linked to a container running Mongo DB called **mongo** and a container running MySQL called **mysql**.
+This will start the application in a container called `app` and the application will be linked to a container running Mongo DB called `mongo` and a container running MySQL called `mysql`.
 
 Furthermore for development purposes 2 additional containers are started that 
 
-* monitor the frontend js, css and html files for changes and run WebPack if so
-* monitor the JavaScript tests for changes and re-run Karma if so
+* monitor the frontend js, css and html files for changes and run WebPack if so. The container is called `webpack`.
+* monitor the JavaScript tests for changes and re-run Karma if so. the container is called `ui-unittests`.
 
 To allow for a nice **edit and continue** experience relevant directories are mapped into the respective containers (app, webpack, ui-unittests). This way changes in the file system are forwarded to the container and the appropriate action can be taken.
+
+Mongo DB and MySQL store their data on the Host (Mac) in the sub-folder `data` of the project folder.
 
 Once we are done for the day with developing we can simple run the following clean up command
 
@@ -21,9 +23,12 @@ docker-compose -f docker/docker-compose.debug.yml down
 ```
 
 ## DB migration and super user
-To migrate the apllication DB exec into the application container
+When starting fresh, there is no schema and no data in MySQL. 
+
+**Note:** The following is ONLY needed the very first time you run the app OR if you want to start fresh!
+To migrate the apllication DB **exec** into the application container
 ```
-docker exec -it mysite /bin/bash
+docker exec -it app /bin/bash
 ```
 
 then run the command
