@@ -45,7 +45,7 @@ module.exports = function (config) {
     preprocessors: preprocessors,
     reporters: ['spec', 'coverage', 'bamboo'],
     bambooReporter: {
-      filename: 'dist/bamboo.json',
+      filename: 'reports/bamboo.json',
     },
     coverageReporter: {
       type: 'html',
