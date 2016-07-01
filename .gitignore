@@ -6,7 +6,7 @@ robottests/robot_venv/
 
 front/node_modules/
 front/etc/
-fron/reports
+fron/reports/
 static/front/
 templates/_base.html
 
