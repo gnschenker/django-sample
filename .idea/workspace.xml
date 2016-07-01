@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2acc95ba-8593-4860-ab12-7f94c0f410f0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/worker/Dockerfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/worker/docker-compose.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/worker/tasks.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mysite.iws" />
@@ -33,47 +30,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tasks.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worker/tasks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worker/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worker/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="docker-compose.debug.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.debug.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="5" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="5" />
+            <state relative-caret-position="375">
+              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dockerfile.ui-unittests" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dockerfile.ui-unittests">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -121,7 +108,6 @@
         <option value="$PROJECT_DIR$/docker-compose.test.yml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/front/webpack/webpack.config.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.dockerignore" />
         <option value="$PROJECT_DIR$/front/src/app/views/posts/posts.html" />
         <option value="$PROJECT_DIR$/mysite/settings.py" />
@@ -130,11 +116,13 @@
         <option value="$PROJECT_DIR$/front/src/app/index.js" />
         <option value="$PROJECT_DIR$/front/src/app/views/posts/posts.scss" />
         <option value="$PROJECT_DIR$/Dockerfile.webpack" />
-        <option value="$PROJECT_DIR$/docker-compose.debug.yml" />
         <option value="$PROJECT_DIR$/worker/calculator.py" />
         <option value="$PROJECT_DIR$/worker/Dockerfile" />
         <option value="$PROJECT_DIR$/worker/docker-compose.yml" />
         <option value="$PROJECT_DIR$/front/package.json" />
+        <option value="$PROJECT_DIR$/docker-compose.debug.yml" />
+        <option value="$PROJECT_DIR$/Dockerfile.ui-unittests" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -145,6 +133,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="335" />
     <option name="y" value="23" />
     <option name="width" value="1104" />
     <option name="height" value="825" />
@@ -291,6 +280,11 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="prop_add_unversioned_files" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/playground" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager" selected="Docker Deployment.Docker Deployment">
     <configuration default="false" name="Test: polls.tests" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
@@ -630,7 +624,28 @@
       <option name="project" value="LOCAL" />
       <updated>1467382291438</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Start adding some celery infrastructure">
+      <created>1467382430815</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1467382430815</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding container for UI unit tests (Karma)">
+      <created>1467384062467</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1467384062467</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adding container for UI unit tests (Karma)">
+      <created>1467384109404</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1467384109404</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -666,7 +681,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1104" height="825" extended-state="0" />
+    <frame x="335" y="23" width="1104" height="825" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2536232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -726,7 +741,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix errors in package.json regarding karma tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix errors in package.json regarding karma tests" />
+    <MESSAGE value="Start adding some celery infrastructure" />
+    <MESSAGE value="Adding container for UI unit tests (Karma)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding container for UI unit tests (Karma)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -735,13 +752,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/polls/results.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/polls/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -915,14 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.dockerignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -990,6 +992,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,6 +1021,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,6 +1029,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="12" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,6 +1052,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1054,6 +1062,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,6 +1070,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="14" column="33" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1088,18 +1098,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.debug.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="95" selection-start-line="18" selection-start-column="95" selection-end-line="18" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.debug.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile.ui-unittests">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding />
         </state>
       </provider>

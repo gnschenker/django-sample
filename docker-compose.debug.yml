@@ -19,6 +19,13 @@ services:
       - ./front/src:/usr/src/app/front/src
       - ./static:/usr/src/app/static
       - ./templates:/usr/src/app/templates
+  ui-unittests:
+    build:
+      context: .
+      dockerfile: Dockerfile.ui-unittests
+    container_name: 'ui-unittests'
+    volumes:
+      - ./front/src:/usr/src/app/front/src
   mysql:
     image: mysql:5.7
     container_name: mysql

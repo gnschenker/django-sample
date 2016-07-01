@@ -1,0 +1,8 @@
+FROM node:5
+RUN mkdir -p /usr/src/app/front
+WORKDIR /usr/src/app/front
+COPY front/package.json /usr/src/app/front/
+RUN npm install
+COPY . /usr/src/app
+
+ENTRYPOINT npm run test-watch
