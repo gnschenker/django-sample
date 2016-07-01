@@ -2,13 +2,14 @@ version: '2'
 services:
   app:
     build: .
-    container_name: 'mysite'
+    container_name: 'app'
+    volumes:
+      - ../.:/usr/src/app
     links:
       - mysql
       - mongo
     ports:
       - '8000:8000'
-    entrypoint: /bin/bash ./test.sh
   mysql:
     image: mysql:5.7
     container_name: mysql
@@ -16,13 +17,13 @@ services:
       - MYSQL_ROOT_PASSWORD=admin
       - MYSQL_USER=wombat
       - MYSQL_PASSWORD=1wombat2
-      - MYSQL_DATABASE=test_mysite
+      - MYSQL_DATABASE=mysite
     volumes:
-      - ./data/mysql-test:/var/lib/mysql
+      - .././data/mysql:/var/lib/mysql
   mongo:
     image: mongo:3
     container_name: mongo
     volumes:
-      - ./data/mongo:/data/db
+      - .././data/mongo:/data/db
     ports:
       - '27017:27017'

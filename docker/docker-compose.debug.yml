@@ -1,10 +1,12 @@
 version: '2'
 services:
   app:
-    build: .
-    container_name: 'mysite'
+    build:
+      context: ../.
+      dockerfile: docker/Dockerfile
+    container_name: 'app'
     volumes:
-      - .:/usr/src/app
+      - ../.:/usr/src/app
     links:
       - mysql
       - mongo
@@ -12,20 +14,20 @@ services:
       - '80:8000'
   webpack:
     build:
-      context: .
-      dockerfile: Dockerfile.webpack
+      context: ../.
+      dockerfile: docker/Dockerfile.webpack
     container_name: 'webpack'
     volumes:
-      - ./front/src:/usr/src/app/front/src
-      - ./static:/usr/src/app/static
-      - ./templates:/usr/src/app/templates
+      - .././front/src:/usr/src/app/front/src
+      - .././static:/usr/src/app/static
+      - .././templates:/usr/src/app/templates
   ui-unittests:
     build:
-      context: .
-      dockerfile: Dockerfile.ui-unittests
+      context: ../.
+      dockerfile: docker/Dockerfile.ui-unittests
     container_name: 'ui-unittests'
     volumes:
-      - ./front/src:/usr/src/app/front/src
+      - .././front/src:/usr/src/app/front/src
   mysql:
     image: mysql:5.7
     container_name: mysql
@@ -35,11 +37,11 @@ services:
       - MYSQL_PASSWORD=1wombat2
       - MYSQL_DATABASE=mysite
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - .././data/mysql:/var/lib/mysql
   mongo:
     image: mongo:3
     container_name: mongo
     volumes:
-      - ./data/mongo:/data/db
+      - .././data/mongo:/data/db
     ports:
       - '27017:27017'
