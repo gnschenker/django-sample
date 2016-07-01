@@ -49,7 +49,7 @@ module.exports = function (config) {
     },
     coverageReporter: {
       type: 'html',
-      dir: 'dist/tests/',
+      dir: 'reports/',
     },
     ngHtml2JsPreprocessor: {
       stripPrefix: 'src/app/views/',
