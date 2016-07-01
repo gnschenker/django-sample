@@ -25,4 +25,14 @@ describe('Posts Controller ', function() {
 	it('says Angular Worked!!! Yay!', function () {
 		expect(scope.postsVM.message).toEqual('Angular Worked!!! Yay!');
 	});
+
+	it('has title "A test..."', function () {
+		expect(scope.postsVM.title).toEqual('A test for Posts');
+	});
+
+
+	it('defines author', function () {
+		expect(scope.postsVM.author).toEqual('Nathan');
+	});
+
 });

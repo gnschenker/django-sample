@@ -24,5 +24,7 @@ function postsConfig($stateProvider) {
 // Posts controller
 function PostsController() {
   var postsVM = this;
+  postsVM.author = 'Nathan';
+  postsVM.title = 'A test for Posts';
   postsVM.message = 'Angular Worked!!! Yay!';
 }
