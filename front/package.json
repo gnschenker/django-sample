@@ -16,7 +16,8 @@
     "build": "webpack --config ./webpack/webpack.config.js",
     "build-dev": "webpack --devtool source-map --config ./webpack/webpack.config.js",
     "develop": "webpack --watch --watch-polling --devtool source-map --config ./webpack/webpack.config.js",
-    "test": "karma start karma.config.js --browsers PhantomJS2 --log-level disable --single-run"
+    "test": "karma start karma.conf.js --browsers PhantomJS2 --log-level disable --single-run",
+    "test-watch": "karma start karma.conf.js"
   },
   "devDependencies": {
     "angular": "~1.5.7",
