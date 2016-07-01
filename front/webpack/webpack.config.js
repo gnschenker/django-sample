@@ -58,7 +58,13 @@ module.exports = {
       filename: '/_base.html',
       replace: { appjs: 'app.js?v=[hash]' }
     })
-  ]
+  ],
+  resolve: {
+    // root: __dirname,
+    alias: {
+      angular: 'angular/angular.min'
+    },
+  }
 }
 
 //Configure environment

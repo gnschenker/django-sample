@@ -1,7 +1,8 @@
 require('./posts.scss');
 
 var thisModule = angular.module('sample.views.posts', [])
-  .config(postsConfig);
+  .config(postsConfig)
+  .controller('PostsController', PostsController);
 
 if (typeof module === 'object' && module.hasOwnProperty('exports')) module.exports = thisModule;
 
@@ -13,7 +14,7 @@ function postsConfig($stateProvider) {
         "layout@": {
           template: require('./posts.html'),
           controllerAs: 'postsVM',
-          controller: postsController
+          controller: 'PostsController'
         }
       }
     })
@@ -21,7 +22,7 @@ function postsConfig($stateProvider) {
 }
 
 // Posts controller
-function postsController() {
-  var appVM = this;
-  appVM.message = 'Angular Worked!!! Or not?';
+function PostsController() {
+  var postsVM = this;
+  postsVM.message = 'Angular Worked!!! Yay!';
 }
